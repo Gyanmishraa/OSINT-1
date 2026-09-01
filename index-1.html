@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="OSINT Hub — a responsible open-source intelligence learning and tools directory.">
+  <title>OSINT Hub — Learn • Verify • Investigate</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#07100e;--panel:#0d1a17;--panel2:#10221d;--text:#ecf5ef;--muted:#8da39a;--line:#1d332c;--accent:#64f0ad;--accent2:#b8ffdd;--shadow:0 20px 60px #0008}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 10%,#12382b55,transparent 30%),var(--bg);color:var(--text);font-family:"Space Grotesk",sans-serif;line-height:1.55}.topbar{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;z-index:10;background:#07100eee;backdrop-filter:blur(15px)}.brand{font-weight:700;letter-spacing:.08em;color:var(--text);text-decoration:none}.brand span{color:var(--accent)}.brand-mark{color:var(--accent)!important;margin-right:8px}nav{display:flex;gap:28px}nav a{color:var(--muted);text-decoration:none;font-size:.92rem}nav a:hover{color:var(--accent)}button,.btn{font:inherit}.theme{background:none;border:1px solid var(--line);color:var(--text);border-radius:50%;width:38px;height:38px;cursor:pointer}.hero{min-height:650px;display:grid;grid-template-columns:1.1fr .9fr;gap:5%;align-items:center;padding:80px 8%;max-width:1400px;margin:auto}.eyebrow{font:500 .72rem "DM Mono",monospace;letter-spacing:.18em;color:var(--accent);margin:0 0 12px}.hero h1{font-size:clamp(3.2rem,7vw,6.4rem);line-height:.95;letter-spacing:-.06em;margin:0}.hero h1 em{font-style:normal;color:var(--accent)}.lead{font-size:1.15rem;color:var(--muted);max-width:650px;margin:28px 0}.hero-actions{display:flex;gap:12px;margin:25px 0}.btn{display:inline-block;padding:12px 19px;border-radius:9px;text-decoration:none;font-weight:600}.primary{background:var(--accent);color:#06120d}.ghost{border:1px solid var(--line);color:var(--text)}.notice{border-left:2px solid #d5b55b;padding:12px 15px;background:#17170d;color:#aeb4a9;font-size:.84rem;max-width:650px}.hero-card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:45px;box-shadow:var(--shadow)}.radar{width:min(310px,100%);aspect-ratio:1;border-radius:50%;margin:auto;border:1px solid #315346;background:repeating-radial-gradient(circle,#0e2920 0 1px,transparent 2px 55px),radial-gradient(circle,#183a2d,#07100e 65%);display:grid;place-items:center;position:relative;overflow:hidden;color:var(--accent);font:500 1rem "DM Mono"}.radar:before,.radar:after{content:"";position:absolute;background:#315346}.radar:before{width:100%;height:1px}.radar:after{height:100%;width:1px}.sweep{position:absolute;width:50%;height:2px;background:linear-gradient(90deg,transparent,var(--accent));right:50%;top:50%;transform-origin:100% 50%;animation:sweep 4s linear infinite}@keyframes sweep{to{transform:rotate(360deg)}}.stats{display:flex;justify-content:space-around;margin-top:35px;text-align:center}.stats b{display:block;font-size:1.6rem;color:var(--accent)}.stats small{font:500 .65rem "DM Mono";color:var(--muted)}.section{padding:90px 8%;max-width:1400px;margin:auto}.alt{max-width:none;background:#091512;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:30px}.section-head h2,.about h2{font-size:2.8rem;letter-spacing:-.04em;margin:0}.section-head>p{color:var(--muted)}.search-row{display:flex;gap:10px;margin-bottom:25px}.search-row input,.search-row select{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:14px;border-radius:9px;outline:none}.search-row input{flex:1}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tool{background:var(--panel);border:1px solid var(--line);padding:20px;border-radius:13px;transition:.2s}.tool:hover{transform:translateY(-3px);border-color:#356354}.tool h3{margin:8px 0 5px}.tool p{color:var(--muted);font-size:.9rem;margin:0 0 14px}.tag{display:inline-block;font:500 .65rem "DM Mono";color:var(--accent);border:1px solid #315346;border-radius:20px;padding:4px 8px;margin-right:5px}.tool a{color:var(--accent2);font-size:.82rem;text-decoration:none}.method-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.method{background:var(--bg);padding:28px}.method span{font:500 .7rem "DM Mono";color:var(--accent)}.method h3{font-size:1.35rem;margin:20px 0 5px}.method p,.levels p,.about p{color:var(--muted)}.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.levels article{padding:28px;background:var(--panel);border:1px solid var(--line);border-radius:13px}.levels b{color:var(--accent);font:500 .72rem "DM Mono"}.levels h3{margin-bottom:0}.about{max-width:900px}.about p{font-size:1.1rem}footer{border-top:1px solid var(--line);padding:40px 8%;display:flex;justify-content:space-between;color:var(--muted);font-size:.85rem}footer strong{color:var(--text)}@media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:60px}.hero-card{display:none}.grid,.method-grid,.levels{grid-template-columns:1fr}.section{padding:65px 5%}.section-head{display:block}.section-head>p{margin-top:8px}.hero{padding-left:5%;padding-right:5%}.hero h1{font-size:3.4rem}.search-row{flex-direction:column}footer{display:block}}
+.light{--bg:#f1f6f3;--panel:#fff;--panel2:#e7f1ec;--text:#102019;--muted:#5e7168;--line:#ccdcd4;--accent:#087a4a;--accent2:#075d3a}
+
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="brand-mark">◈</span> OSINT<span>HUB</span></a>
+  <nav>
+    <a href="#tools">Tools</a><a href="#methods">Methods</a><a href="#learn">Learn</a><a href="#about">About</a>
+  </nav>
+  <button class="theme" id="themeBtn" aria-label="Toggle theme">☾</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">OPEN-SOURCE INTELLIGENCE</p>
+    <h1>Research smarter.<br><em>Verify everything.</em></h1>
+    <p class="lead">A clean directory of OSINT tools, methodologies and learning resources for lawful public-information research.</p>
+    <div class="hero-actions"><a class="btn primary" href="#tools">Explore tools →</a><a class="btn ghost" href="#learn">Start learning</a></div>
+    <div class="notice">⚠️ <strong>Responsible use:</strong> Use public information lawfully. Respect privacy, platform rules and consent. Don't use this site to harass, stalk or expose private people.</div>
+  </div>
+  <div class="hero-card">
+    <div class="radar"><div class="sweep"></div><span>OSINT</span></div>
+    <div class="stats"><div><b id="toolCount">18</b><small>TOOLS</small></div><div><b>6</b><small>METHODS</small></div><div><b>3</b><small>LEVELS</small></div></div>
+  </div>
+</section>
+
+<section class="section" id="tools">
+  <div class="section-head"><div><p class="eyebrow">DIRECTORY</p><h2>OSINT tools</h2></div><p>Search and filter resources by research task.</p></div>
+  <div class="search-row"><input id="search" placeholder="Search tools, categories or descriptions…" autocomplete="off"><select id="category"><option value="all">All categories</option><option>Web</option><option>Images</option><option>Domains</option><option>Archives</option><option>Maps</option><option>Metadata</option><option>Verification</option><option>Learning</option><option>Social</option><option>Email</option><option>Username</option><option>APIs</option></select></div>
+  <div id="toolGrid" class="grid"></div>
+</section>
+
+<section class="section alt" id="methods">
+  <div class="section-head"><div><p class="eyebrow">METHODOLOGY</p><h2>Research workflows</h2></div><p>Use a repeatable process instead of jumping between tools.</p></div>
+  <div class="method-grid">
+    <article class="method"><span>01</span><h3>Define</h3><p>Write the question, scope, timeframe and what would count as useful evidence.</p></article>
+    <article class="method"><span>02</span><h3>Discover</h3><p>Use broad searches and public sources to build an initial set of leads.</p></article>
+    <article class="method"><span>03</span><h3>Pivot</h3><p>Move between related public clues such as domains, dates, images and locations.</p></article>
+    <article class="method"><span>04</span><h3>Verify</h3><p>Cross-check important claims against independent, reputable sources.</p></article>
+    <article class="method"><span>05</span><h3>Document</h3><p>Record URLs, dates, screenshots and reasoning so findings can be reproduced.</p></article>
+    <article class="method"><span>06</span><h3>Review</h3><p>Separate facts from assumptions and remove unsupported conclusions.</p></article>
+  </div>
+</section>
+
+<section class="section" id="learn">
+  <div class="section-head"><div><p class="eyebrow">LEARNING PATH</p><h2>Build your OSINT fundamentals</h2></div></div>
+  <div class="levels">
+    <article><b>01 · Beginner</b><h3>Search & source literacy</h3><p>Search operators, source evaluation, archives and basic image verification.</p></article>
+    <article><b>02 · Intermediate</b><h3>Cross-source research</h3><p>Connect public clues across domains, dates, maps and media while keeping an evidence trail.</p></article>
+    <article><b>03 · Advanced</b><h3>Verification & reporting</h3><p>Build reproducible research notes, corroborate claims and communicate uncertainty clearly.</p></article>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <p class="eyebrow">ABOUT</p><h2>What is OSINT?</h2>
+  <p>Open-source intelligence (OSINT) is the process of collecting and analysing information that is publicly available. Good OSINT is less about finding a magic tool and more about asking precise questions, validating evidence and documenting how you reached a conclusion.</p>
+</section>
+</main>
+
+<footer><div><strong>OSINT HUB</strong><p>Learn • Verify • Investigate</p></div><p>Built for responsible public-information research.</p></footer>
+<script>
+const tools=[
+["WebVetted Instagram Profile Check","Social","Analyse public Instagram profile signals such as account consistency, engagement patterns and impersonation indicators.","https://webvetted.com/detect/social/instagram"],
+["DNSDumpster","Domains","DNS reconnaissance and domain infrastructure research tool.","https://dnsdumpster.com/"],
+["Aware Online — Email Search Tool","Email","OSINT resource for researching publicly available email-related information.","https://www.aware-online.com/en/osint-tools/email-search-tool/"],
+["Authentic8 — Instagram OSINT Guide","Learning","Guide covering Instagram profile analysis, search techniques, images and public-source verification.","https://authentic8.com/osint-instagram-guide/"],
+["IntelDesk — Username","Username","Username-focused OSINT resource for researching public online identifiers.","https://www.inteldesk.io/#username"],
+["BehindTheEmail","Email","Resource for email-focused OSINT and publicly available email research.","https://behindtheemail.com/"],
+["FlashAPI — RapidAPI","APIs","API playground for experimenting with an online data service. Review its terms and access requirements before use.","https://rapidapi.com/for-sharm/api/flashapi1/playground/apiendpoint_23395777-5f1e-46b8-9548-7ac0d6bbd7e5"],
+["Spokeo Social Search","Social","People-search/social lookup service. Availability and results may vary by region and subscription.","https://www.spokeo.com/"],
+
+["Search operators","Web","Use precise search syntax to narrow public web results.","https://www.google.com/advanced_search"],
+["Google Search","Web","General web discovery and source comparison.","https://www.google.com/"],
+["Bing Search","Web","Alternative web search engine for cross-checking results.","https://www.bing.com/"],
+["Internet Archive","Archives","Explore archived versions of publicly accessible webpages.","https://web.archive.org/"],
+["Google Lens","Images","Find visually similar images and identify image context.","https://lens.google.com/"],
+["TinEye","Images","Reverse-image search for finding image matches and history.","https://tineye.com/"],
+["ExifTool","Metadata","Read metadata from files you already have permission to analyse.","https://exiftool.org/"],
+["Google Maps","Maps","Map, satellite and street-level context for locations.","https://maps.google.com/"],
+["OpenStreetMap","Maps","Open geographic data and map context.","https://www.openstreetmap.org/"],
+["Google Earth","Maps","Explore satellite imagery and geographic context.","https://earth.google.com/"],
+["crt.sh","Domains","Search publicly logged TLS certificates for domain research.","https://crt.sh/"],
+["ICANN Lookup","Domains","Look up publicly available domain registration data.","https://lookup.icann.org/"],
+["urlscan.io","Verification","Inspect publicly submitted web scan results and page resources.","https://urlscan.io/"],
+["VirusTotal","Verification","Analyse files, URLs and domains using multiple security engines.","https://www.virustotal.com/"],
+["Have I Been Pwned","Verification","Check whether an email appears in known breach datasets.","https://haveibeenpwned.com/"],
+["Bellingcat Online Investigation Toolkit","Learning","Curated resources and methodology for responsible open-source research.","https://bellingcat.gitbook.io/toolkit/"],
+["OSINT Framework","Learning","Large directory of OSINT resources organised by research task.","https://osintframework.com/"],
+["Google Fact Check Explorer","Learning","Search fact-checking claims from publishers around the web.","https://toolbox.google.com/factcheck/explorer"]
+];
+const grid=document.querySelector("#toolGrid"),search=document.querySelector("#search"),category=document.querySelector("#category");
+document.querySelector("#toolCount").textContent=tools.length;
+function render(){let q=search.value.toLowerCase(),c=category.value;let x=tools.filter(t=>(c==="all"||t[1]===c)&&t.join(" ").toLowerCase().includes(q));grid.innerHTML=x.length?x.map(t=>`<article class="tool"><span class="tag">${t[1]}</span><h3>${t[0]}</h3><p>${t[2]}</p><a href="${t[3]}" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article>`).join(""):`<p style="color:var(--muted)">No matching resources.</p>`}
+search.addEventListener("input",render);category.addEventListener("change",render);render();
+document.querySelector("#themeBtn").onclick=()=>{document.body.classList.toggle("light");document.querySelector("#themeBtn").textContent=document.body.classList.contains("light")?"☀":"☾"};
+
+</script>
+</body>
+</html>
