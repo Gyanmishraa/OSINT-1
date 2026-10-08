@@ -1,0 +1,29 @@
+# OSINT Hub
+
+> OSINT Hub is a curated collection of resources for researching publicly available information, online security, verification, cybersecurity awareness, and lawful OSINT research.
+
+## Main Website
+
+- [OSINT Hub](https://gyanmishraa.github.io/OSINT-1/): Main OSINT Hub website and collection of research resources.
+
+## Purpose
+
+OSINT Hub organizes publicly available resources for information research and verification. It is intended for lawful research, education, cybersecurity awareness, journalism, and crime prevention.
+
+## Topics
+
+- Email address research
+- Username research
+- Digital identity research
+- Vehicle registration research
+- Cybersecurity resources
+- Online investigation resources
+- Information verification
+
+## Responsible Use
+
+Use these resources responsibly and lawfully. Respect privacy, applicable laws, website terms of service, and the rights of other people.
+
+## Repository
+
+- [OSINT Hub GitHub Repository](https://github.com/Gyanmishraa/OSINT-1): Source code and project files.
